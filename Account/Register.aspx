@@ -6,6 +6,7 @@
         <h2>使用以下表单创建新帐户。</h2>
     </hgroup>
 
+
     <asp:CreateUserWizard runat="server" ID="RegisterUser" ViewStateMode="Disabled" OnCreatedUser="RegisterUser_CreatedUser">
         <LayoutTemplate>
             <asp:PlaceHolder runat="server" ID="wizardStepPlaceholder" />
@@ -53,6 +54,7 @@
                             </li>
                         </ol>
                         <asp:Button runat="server" CommandName="MoveNext" Text="注册" />
+                        <asp:Button ID="Button1" runat="server" Text="Button"/>
                     </fieldset>
                 </ContentTemplate>
                 <CustomNavigationTemplate />
